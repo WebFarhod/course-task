@@ -10,9 +10,9 @@ import AuthMiddleware from "../middlewares/auth.middleware";
 const routes = Router();
 
 routes.use("/auth", authRoute);
-routes.use("/course", AuthMiddleware, courseRoute);
-routes.use("/student", AuthMiddleware, studentRoute);
-routes.use("/enroll", AuthMiddleware, enrollRoute);
-routes.use("/dashboard", AuthMiddleware, dashboardRoute);
+routes.use("/course", courseRoute);
+routes.use("/student", studentRoute);
+routes.use("/enroll", enrollRoute);
+routes.use("/dashboard", dashboardRoute);
 
 export default routes;
